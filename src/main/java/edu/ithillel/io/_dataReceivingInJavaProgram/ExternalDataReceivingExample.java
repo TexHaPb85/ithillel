@@ -1,4 +1,4 @@
-package edu.ithillel.io;
+package edu.ithillel.io._dataReceivingInJavaProgram;
 
 import java.io.FileInputStream;
 import java.io.IOException;

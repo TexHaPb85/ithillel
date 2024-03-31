@@ -1,4 +1,4 @@
-package edu.ithillel.io;
+package edu.ithillel.io.aSimpleInputOutput;
 
 import java.io.*;
 import java.util.Arrays;
@@ -6,8 +6,8 @@ import java.util.Arrays;
 public class BytesIOExample {
     public static void main(String[] args) {
         try(
-                InputStream is = new FileInputStream("files/fileInProjectRoot.txt");
-                OutputStream os = new FileOutputStream("files/outPut.pdf")
+                InputStream is = new FileInputStream("files/readFileExample.txt");
+                OutputStream os = new FileOutputStream("files/output.pdf")
         ) {
             byte[] inputPdf = readBytes(is, os); // What is exception
             System.out.println(inputPdf);
@@ -21,7 +21,7 @@ public class BytesIOExample {
         }
     }
 
-    private static byte[] readBytes(InputStream inputStream,OutputStream outputStream) throws IOException {
+    private static byte[] readBytes(InputStream inputStream, OutputStream outputStream) throws IOException {
         byte[] buffer = new byte[9999]; // number of bytes in IS, bad for big files
         int read;
 
