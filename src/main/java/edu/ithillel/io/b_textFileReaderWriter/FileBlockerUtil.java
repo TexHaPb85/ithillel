@@ -1,4 +1,4 @@
-package edu.ithillel.io.bTextFileReaderWriter;
+package edu.ithillel.io.b_textFileReaderWriter;
 
 import java.io.File;
 

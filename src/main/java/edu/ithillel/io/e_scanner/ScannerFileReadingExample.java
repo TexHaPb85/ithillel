@@ -1,6 +1,6 @@
-package edu.ithillel.io.eScanner;
+package edu.ithillel.io.e_scanner;
 
-import edu.ithillel.io._constants.InputOutputConstants;
+import edu.ithillel._constants.InputOutputConstants;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;

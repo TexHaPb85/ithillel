@@ -1,6 +1,6 @@
-package edu.ithillel.io.aSimpleInputOutput;
+package edu.ithillel.io.a_simpleInputOutput;
 
-import edu.ithillel.io._constants.InputOutputConstants;
+import edu.ithillel._constants.InputOutputConstants;
 
 import java.io.*;
 import java.util.Arrays;
@@ -29,7 +29,9 @@ public class InputStreamExample {
              */
             //inputStream.close();
         } catch (FileNotFoundException e) {
-            System.out.println("File not found: " + e.getMessage());
+            //System.out.println("File not found: " + e.getMessage());
+
+
         } catch (IOException e) {
             System.out.println("Error during reading file: " + e.getMessage());
         }

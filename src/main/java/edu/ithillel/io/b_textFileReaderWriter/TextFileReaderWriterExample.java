@@ -1,6 +1,6 @@
-package edu.ithillel.io.bTextFileReaderWriter;
+package edu.ithillel.io.b_textFileReaderWriter;
 
-import edu.ithillel.io._constants.InputOutputConstants;
+import edu.ithillel._constants.InputOutputConstants;
 
 import java.io.*;
 import java.util.Arrays;

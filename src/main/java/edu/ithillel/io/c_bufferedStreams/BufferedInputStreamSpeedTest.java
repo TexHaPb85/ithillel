@@ -1,6 +1,6 @@
-package edu.ithillel.io.cBufferedStreams;
+package edu.ithillel.io.c_bufferedStreams;
 
-import edu.ithillel.io._constants.InputOutputConstants;
+import edu.ithillel._constants.InputOutputConstants;
 
 import java.io.*;
 
@@ -28,7 +28,7 @@ public class BufferedInputStreamSpeedTest {
         long startBuffer = System.currentTimeMillis();
         processFileInBuffer();
         long finishBuffer = System.currentTimeMillis();
-        System.out.println("File read and written via buffer with time: " + Math.abs(startBuffer - finishBuffer));
+        System.out.println("File read and written via buffer with time: " + (finishBuffer - startBuffer));
 
         long startStream = System.currentTimeMillis();
         processFileInSimpleStreams();

@@ -1,7 +1,6 @@
-package edu.ithillel.io.aSimpleInputOutput;
+package edu.ithillel.io.a_simpleInputOutput;
 
 import java.io.*;
-import java.util.Arrays;
 
 public class BytesIOExample {
     public static void main(String[] args) {

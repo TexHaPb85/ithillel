@@ -1,6 +1,6 @@
-package edu.ithillel.io.dSocketIO;
+package edu.ithillel.io.d_socketIO;
 
-import edu.ithillel.io.aSimpleInputOutput.InputStreamExample;
+import edu.ithillel.io.a_simpleInputOutput.InputStreamExample;
 
 import java.io.IOException;
 import java.net.ServerSocket;

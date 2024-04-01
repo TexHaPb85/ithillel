@@ -1,4 +1,4 @@
-package edu.ithillel.io._constants;
+package edu.ithillel._constants;
 
 public interface InputOutputConstants {
     String FILE_FOR_READING_PATH = "files/txt/readFileExample.txt";

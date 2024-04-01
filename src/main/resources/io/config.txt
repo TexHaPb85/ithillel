@@ -1,0 +1,5 @@
+FILE : C:\java\2024\ithillel\src\main\resources\io\
+LEVEL : INFO
+MAX-SIZE : 350
+FORMAT : [%tc][%s] Message from config: %s %n
+EXTEND : false

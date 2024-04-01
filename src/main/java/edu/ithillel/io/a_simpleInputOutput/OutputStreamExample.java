@@ -1,6 +1,6 @@
-package edu.ithillel.io.aSimpleInputOutput;
+package edu.ithillel.io.a_simpleInputOutput;
 
-import edu.ithillel.io._constants.InputOutputConstants;
+import edu.ithillel._constants.InputOutputConstants;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
