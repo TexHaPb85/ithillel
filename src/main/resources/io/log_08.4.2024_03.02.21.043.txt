@@ -1,0 +1,8 @@
+[пн квіт. 08 15:02:21 EEST 2024][INFO] Message: info write some 
+[пн квіт. 08 15:02:21 EEST 2024][DEBUG] Message: info write some 
+[пн квіт. 08 15:02:21 EEST 2024][INFO] Message: info write some 
+[пн квіт. 08 15:02:21 EEST 2024][DEBUG] Message: info write some 
+[пн квіт. 08 15:02:21 EEST 2024][INFO] Message: info write some 
+[пн квіт. 08 15:02:21 EEST 2024][DEBUG] Message: info write some 
+[пн квіт. 08 15:02:21 EEST 2024][INFO] Message: info write some 
+[пн квіт. 08 15:02:21 EEST 2024][DEBUG] Message: info write some 

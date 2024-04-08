@@ -1,0 +1,3 @@
+Multithreading allows to execute in parallel different blocks of code in scope of same program.
+- Callable returns some value
+- call method can throw exception meanwhile run in runnable should handle all exceptions inside.
