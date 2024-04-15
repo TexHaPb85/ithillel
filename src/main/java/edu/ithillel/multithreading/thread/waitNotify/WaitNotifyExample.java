@@ -34,10 +34,14 @@ class MessagesSupplier implements Runnable {
             System.out.println("enter command:");
             synchronized (commandsToProcess) {
                 commandsToProcess.add(scanner.nextLine());
-                commandsToProcess.notify();
+//                commandsToProcess.notify();
                 commandsToProcess.notifyAll();
             }
-            //Thread.sleep(10);
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
 
         }
     }
@@ -59,7 +63,7 @@ class MessagesReceiver implements Runnable {
                     try {
                         System.out.println("no commands");
                         commandsToProcess.wait();
-                    } catch (InterruptedException e) {
+                    } catch (Exception e) {
                         throw new RuntimeException(e);
                     }
                 } else {

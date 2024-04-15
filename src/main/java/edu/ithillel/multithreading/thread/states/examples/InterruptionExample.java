@@ -7,15 +7,26 @@ public class InterruptionExample implements CodeExample {
             @Override
             public void run() {
                 try {
-                    System.out.println("Thread started");
-                    Thread.sleep(5000);
-                    System.out.println("Thread finished");
+                    while (true) {
+                        System.out.println("Thread started");
+                        Thread.sleep(5000);
+                        System.out.println("Thread finished");
+                        if(Thread.interrupted()) {
+                            return;
+                        }
+                    }
                 } catch (InterruptedException e) {
                     System.out.println("Thread was interrupted");
                 }
             }
         });
+
         t1.start();
-        t1.interrupt();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        t1.interrupt();//bool isInterrapted = true;
     }
 }

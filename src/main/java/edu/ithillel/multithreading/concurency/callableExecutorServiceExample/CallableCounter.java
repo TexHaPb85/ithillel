@@ -1,4 +1,4 @@
-package edu.ithillel.multithreading.concurency;
+package edu.ithillel.multithreading.concurency.callableExecutorServiceExample;
 
 import java.util.concurrent.Callable;
 

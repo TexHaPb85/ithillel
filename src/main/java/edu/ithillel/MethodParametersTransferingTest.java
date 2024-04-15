@@ -9,6 +9,18 @@ public class MethodParametersTransferingTest {
         char searchTo = '7';
         for (int i = 0; i < s.length(); i++) {
             if(s.charAt(i) == searchTo) {
+                int t;
+                if(true) {
+                    int r;
+                    if(true) {
+                        int r2;
+                        if(true) {
+                            Object o = new Object();
+                            int r3;
+                        }
+
+                    }
+                }
                 System.out.println("index of search to " + i);
             }
         }

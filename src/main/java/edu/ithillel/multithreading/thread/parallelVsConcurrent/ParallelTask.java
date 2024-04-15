@@ -1,4 +1,4 @@
-package edu.ithillel.multithreading.thread.parallelConcurentTask;
+package edu.ithillel.multithreading.thread.parallelVsConcurrent;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -46,7 +46,7 @@ public class ParallelTask {
         }
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
         String data1Path = rootPath + "thread/data1.txt";
         String data2Path = rootPath + "thread/data2.txt";
@@ -56,6 +56,13 @@ public class ParallelTask {
         t1.start();
         t2.start();
 
+        //t1.setDaemon(true);
+        t1.join();
+        t2.join();
 
+        StringBuilder res = new StringBuilder();
+        res.append(t1.getSb()).append(t2.getSb());
+
+        System.out.println(res);
     }
 }

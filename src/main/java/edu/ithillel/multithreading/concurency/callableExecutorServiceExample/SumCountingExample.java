@@ -1,4 +1,4 @@
-package edu.ithillel.multithreading.concurency;
+package edu.ithillel.multithreading.concurency.callableExecutorServiceExample;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +11,9 @@ import static java.lang.System.currentTimeMillis;
 
 public class SumCountingExample {
     public static void main(String[] args) {
+        int availableProcessors = Runtime.getRuntime().availableProcessors();
         simpleOneThreadCounting(Integer.MAX_VALUE/10);
-        callableParallelCounting(Integer.MAX_VALUE/10,6);
+        callableParallelCounting(Integer.MAX_VALUE/10,12);//availableProcessors
     }
 
     public static void simpleOneThreadCounting(int valueToSum) {
@@ -30,13 +31,16 @@ public class SumCountingExample {
 
     public static void callableParallelCounting(int valueToSum, int numOfCores) {
         long start = System.currentTimeMillis();
+        //Executors.
         ExecutorService executor = Executors.newFixedThreadPool(numOfCores);
         List<Future<Long>> list = new ArrayList<Future<Long>>();
         int corePart = valueToSum / 6;
         for (int i = 0; i < numOfCores; i++) {
             int from = 1 + i * corePart;
             if(i==numOfCores-1) {
-                list.add(executor.submit(new CallableCounter(from, valueToSum)));
+                Future<Long> submit = executor.submit(new CallableCounter(from, valueToSum));
+                //submit.isDone();
+                list.add(submit);
             } else {
                 int to = (i+1) * corePart;
                 list.add(executor.submit(new CallableCounter(from, to)));
@@ -57,6 +61,6 @@ public class SumCountingExample {
         long resTime = (finish - start);
         System.out.println("time: " + resTime);
         executor.shutdown();
-
+        //executor.shutdownNow();//returns list of all the tasks that not yet done and shutdown all thread right now
     }
 }

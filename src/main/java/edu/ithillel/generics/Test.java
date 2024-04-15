@@ -69,8 +69,7 @@ public class Test {
         /**
          * wildcards above by hierarchy
          */
-//        List<? extends Person> persons = new ArrayList<PersonWorker>();
-//        persons.add(new PersonWorker());
+
         GenericContainer<? super PersonWorker> superGenericWildCard
                 = new GenericContainer<>(new PersonWorker());//or new PersonWorker()
 

@@ -1,11 +1,18 @@
 package edu.ithillel.multithreading.thread.deadlock;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
+/**
+ * Deadlock: Deadlock occurs when two or more threads are blocked forever, each waiting for the other to release
+ * a resource that it needs. In other words, deadlock is a situation where two or more threads are stuck in
+ * a circular dependency, unable to proceed because each thread holds a resource that another thread needs.
+ * As a result, none of the threads can make progress.
+ */
 public class DeadlockExample {
-    private static final List<String> list1 = new ArrayList<>();
-    private static final List<String> list2 = new ArrayList<>();
+    private static final List<String> list1 = new ArrayList<String>();//Collections.synchronizedList(new ArrayList<String>());
+    private static final List<String> list2 = new ArrayList<String>();//Collections.synchronizedList(new ArrayList<String>());
 
     public static void main(String[] args) {
         // Thread 1

@@ -1,4 +1,0 @@
-deadlock - треба упорядковувати доступ до ресурсів брати ресурси лише в певному порядку
-livelock
-raceCondition - few thread trying to increase some unsyncronized valiable and all receive 10 but should 10,11,12...
-dataRace
