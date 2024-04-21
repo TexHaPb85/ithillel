@@ -34,7 +34,7 @@ public class SumCountingExample {
         //Executors.
         ExecutorService executor = Executors.newFixedThreadPool(numOfCores);
         List<Future<Long>> list = new ArrayList<Future<Long>>();
-        int corePart = valueToSum / 6;
+        int corePart = valueToSum / numOfCores;
         for (int i = 0; i < numOfCores; i++) {
             int from = 1 + i * corePart;
             if(i==numOfCores-1) {

@@ -1,9 +1,8 @@
 package edu.ithillel.generics;
 
-import edu.ithillel._common.Person;
-import edu.ithillel._common.PersonWorker;
+import edu.ithillel._common.person.Person;
+import edu.ithillel._common.person.PersonWorker;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Test {

@@ -9,3 +9,7 @@ see synchronization and parallelVsConcurrent examples
 volitility - some code instructions that read from RAM memory often can be saved in processor local cache to increase speed
 it leads to the situation when another process(thread) executing on different processor core2 changing in RAM variables
 that are copied into processor local cache of processor core1 and then for some time core1 is working with deprecated data
+
+asynchrony vs parallel vs concurrency
+asynchrony - run task in another thread and forget about it or do something else while waiting for the result
+parallel - two threads do different tasks or divide one task into few tasks and
