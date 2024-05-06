@@ -1,0 +1,15 @@
+deadlock/livelock - треба упорядковувати доступ до ресурсів брати ресурси лише в певному порядку
+see deadlock and livelock examples
+also can be fixed if use timeouts in concurrency
+
+raceCondition/dataRace - few thread trying to increase some unsyncronized variable and all receive 10 but should 10,11,12...
+dataRace is subcase of raceCondition when thread takes deprecated data that was already changed by another thread
+see synchronization and parallelVsConcurrent examples
+
+volitility - some code instructions that read from RAM memory often can be saved in processor local cache to increase speed
+it leads to the situation when another process(thread) executing on different processor core2 changing in RAM variables
+that are copied into processor local cache of processor core1 and then for some time core1 is working with deprecated data
+
+asynchrony vs parallel vs concurrency
+asynchrony - run task in another thread and forget about it or do something else while waiting for the result
+parallel - two threads do different tasks or divide one task into few tasks and
