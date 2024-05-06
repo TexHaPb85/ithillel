@@ -11,6 +11,6 @@ import java.lang.annotation.Target;
 @Target({ElementType.FIELD, ElementType.METHOD, ElementType.TYPE})
 public @interface Hillel {
     String annotationParam1() default "paramOne";
-    String annotationParam2();
+    String annotationParam2() default "paramTwo";;
 
 }

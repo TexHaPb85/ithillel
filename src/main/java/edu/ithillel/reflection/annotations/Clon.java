@@ -10,6 +10,6 @@ import edu.ithillel._common.person.PersonWorker;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Repeatable(PersonWorker.class)
+//@Repeatable(PersonWorker.class)
 public @interface Clon {
 }
